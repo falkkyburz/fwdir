@@ -1,0 +1,84 @@
+firmware/                # Root directory
+├─ build/                # Build directory (dynamic, removed by make clean)
+├─ release/              # Software release package directory (dynamic, removed by make clean)
+├─ doc/                  # Documentation directory
+├─ cfg/                  # Configuration directory
+│  ├─ cfg.h              # Configuration public header (typedef structs)
+│  ├─ cfg_params1.c      # Configuration source (struct initialization)
+│  ├─ cfg_params2.c      # Configuration source (struct initialization)
+├─ lib/                  # Library (reusable) directory
+│  ├─ libdsp/            # DSP library directory
+│  │  ├─ cfg.c           # Configuration library source
+│  │  ├─ cfg.h           # Configuration library public header
+│  │  ├─ crc.c           # Cyclic redundancy check library source
+│  │  ├─ crc.h           # Cyclic redundancy check library public header
+│  │  ├─ ctl.c           # Control library source
+│  │  ├─ ctl.h           # Control library public header
+│  │  ├─ dsp.c           # Digitasl signal processing library source
+│  │  ├─ dsp.h           # Digitasl signal processing library public header
+│  │  ├─ mdp.c           # Measurement data processing library source
+│  │  ├─ mdp.h           # Measurement data processing library public header
+│  │  ├─ mon.c           # Monitoring library source
+│  │  ├─ mon.h           # Monitoring library public header
+│  │  ├─ sdp.c           # Setpoint data processing library source
+│  │  ├─ sdp.h           # Setpoint data processing library public header
+│  ├─ libhal_mcu1/       # Hardware abstraction layer for MCU 1
+│  │  ├─ inc/            # HAL include
+│  │  ├─ src/            # HAL source
+│  ├─ libhal_mcu2/       # Hardware abstraction layer for MCU 2
+│  │  ├─ inc/            # HAL include
+│  │  ├─ src/            # HAL source
+├─ lnk/                  # Linker file directory
+│  ├─ memory_mcu1.lnk    # Linker file for MCU 1
+│  ├─ memory_mcu2.lnk    # Linker file for MCU 2
+├─ proj/                 # Project file directory
+│  ├─ ide/               # Integrated development environment project files
+│  ├─ flash/             # Flashing scripts
+├─ src/                  # Source directory
+│  ├─ asw/               # Application software source directory
+│  │  ├─ asw_cmp1.c      # Application software component 1 source
+│  │  ├─ asw_cmp1.h      # Application software component 1 public header
+│  │  ├─ asw_cmp2.c      # Application software component 2 source
+│  │  ├─ asw_cmp2.h      # Application software component 2 public header
+│  ├─ bsw/               # Basic software source directory
+│  │  ├─ bsw.c           # Basic software source
+│  │  ├─ bsw.h           # Basic software public header
+│  │  ├─ bsw_cmp1.c      # Basic software component 1 source
+│  │  ├─ bsw_cmp1.h      # Basic software component 1 public header
+│  │  ├─ bsw_cmp2.c      # Basic software component 2 source
+│  │  ├─ bsw_cmp2.h      # Basic software component 2 public header
+│  │  ├─ bsw_board.h     # Basic software board public header
+│  │  ├─ bsw_init.h      # Basic software initialization public header
+│  │  ├─ bsw_mcu.h       # Basic software for MCU specifics public header
+│  ├─ bsw_board_v1r1/    # Basic software for board variant 1 revision 1 directory
+│  │  ├─ bsw_board.c     # Basic software for board variant 1 revision 1 specific source
+│  │  ├─ bsw_mcu.c       # Basic software for board variant 1 revision 1 specifics source
+│  │  ├─ bsw_init.c      # Basic software for board variant 1 revision 1 initialization source
+│  ├─ bsw_board_v1r2/    # Basic software for board variant 1 revision 2 directory
+│  │  ├─ bsw_board.c     # Basic software for board variant 1 revision 2 specific source
+│  │  ├─ bsw_mcu.c       # Basic software for board variant 1 revision 2 specifics source
+│  │  ├─ bsw_init.c      # Basic software for board variant 1 revision 2 initialization source
+│  ├─ bsw_board_v2r1/    # Basic software for board variant 2 revision 1 directory
+│  │  ├─ bsw_board.c     # Basic software for board variant 2 revision 1 specific source
+│  │  ├─ bsw_mcu.c       # Basic software for board variant 2 revision 1 specifics source
+│  │  ├─ bsw_init.c      # Basic software for board variant 2 revision 1 initialization source
+│  ├─ main.c             # Main source
+├─ util/                 # Utilities and scripts directory
+├─ test/                 # Test directory
+│  ├─ lib/               # Test directory for libraries
+│  │  ├─ libdsp/         # Test directory for dsp library
+│  │  │  ├─ dsp_test.c   # Test source for dsp.h/dsp.c
+│  │  │  ├─ cfg_test.c   # Test source for cfg.h/cfg.c
+├─ tool/                 # Tools directory
+│  ├─ compiler_mcu1/     # Embedded cross compiler for MCU type 1 directory
+│  ├─ compiler_mcu2/     # Embedded cross compiler for MCU type 2 directory (optional)
+│  ├─ getname/           # Software release name directory
+│  │  ├─ getname.c       # Software release name generator source
+├─ .gitignore            # Gitignore file for GIT
+├─ Makefile              # Makefile for GNU Make
+├─ clang_foramt          # Clang format file for the clang-format code formatting tool
+├─ configure             # Script to install and configure the work environment
+├─ README.md             # Readme file
+├─ VERSION               # Version file
+├─ LICENSE               # License file
+├─ DIRECTORY             # This file
