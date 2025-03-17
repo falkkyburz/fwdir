@@ -36,6 +36,16 @@ firmware/                # Root directory
 │  ├─ flash/             # Flashing scripts
 ├─ src/                  # Source directory
 │  ├─ asw/               # Application software source directory
+│  │  ├─ asw_mon.c       # Application software component 
+│  │  ├─ asw_mon.h       # Application software component public header
+│  │  ├─ asw_mdp.c       # Application software component 
+│  │  ├─ asw_mdp.h       # Application software component public header
+│  │  ├─ asw_sdp.c       # Application software component 
+│  │  ├─ asw_sdp.h       # Application software component public header
+│  │  ├─ asw_ctl.c       # Application software component 
+│  │  ├─ asw_ctl.h       # Application software component public header
+│  │  ├─ asw_state.c     # Application software component 
+│  │  ├─ asw_state.h     # Application software component public header
 │  │  ├─ asw_cmp1.c      # Application software component 1 source
 │  │  ├─ asw_cmp1.h      # Application software component 1 public header
 │  │  ├─ asw_cmp2.c      # Application software component 2 source
@@ -50,19 +60,23 @@ firmware/                # Root directory
 │  │  ├─ bsw_board.h     # Basic software board public header
 │  │  ├─ bsw_init.h      # Basic software initialization public header
 │  │  ├─ bsw_mcu.h       # Basic software for MCU specifics public header
-│  ├─ bsw_board_v1r1/    # Basic software for board variant 1 revision 1 directory
-│  │  ├─ bsw_board.c     # Basic software for board variant 1 revision 1 specific source
-│  │  ├─ bsw_mcu.c       # Basic software for board variant 1 revision 1 specifics source
-│  │  ├─ bsw_init.c      # Basic software for board variant 1 revision 1 initialization source
-│  ├─ bsw_board_v1r2/    # Basic software for board variant 1 revision 2 directory
-│  │  ├─ bsw_board.c     # Basic software for board variant 1 revision 2 specific source
-│  │  ├─ bsw_mcu.c       # Basic software for board variant 1 revision 2 specifics source
-│  │  ├─ bsw_init.c      # Basic software for board variant 1 revision 2 initialization source
-│  ├─ bsw_board_v2r1/    # Basic software for board variant 2 revision 1 directory
-│  │  ├─ bsw_board.c     # Basic software for board variant 2 revision 1 specific source
-│  │  ├─ bsw_mcu.c       # Basic software for board variant 2 revision 1 specifics source
-│  │  ├─ bsw_init.c      # Basic software for board variant 2 revision 1 initialization source
+│  ├─ bsp_board_v1r1/    # Board support package for board variant 1 revision 1 directory
+│  │  ├─ bsp_board.h     # Board support package for board variant 1 revision 1 specific header
+│  │  ├─ bsp_board.c     # Board support package for board variant 1 revision 1 specific source
+│  │  ├─ bsp_mcu.c       # Board support package for board variant 1 revision 1 specifics source
+│  │  ├─ bsp_init.c      # Board support package for board variant 1 revision 1 initialization source
+│  ├─ bsp_board_v1r2/    # Board support package for board variant 1 revision 2 directory
+│  │  ├─ bsp_board.h     # Board support package for board variant 1 revision 2 specific header
+│  │  ├─ bsp_board.c     # Board support package for board variant 1 revision 2 specific source
+│  │  ├─ bsp_mcu.c       # Board support package for board variant 1 revision 2 specifics source
+│  │  ├─ bsp_init.c      # Board support package for board variant 1 revision 2 initialization source
+│  ├─ bsp_board_v2r1/    # Board support package for board variant 2 revision 1 directory
+│  │  ├─ bsp_board.h     # Board support package for board variant 2 revision 1 specific header
+│  │  ├─ bsp_board.c     # Board support package for board variant 2 revision 1 specific source
+│  │  ├─ bsp_mcu.c       # Board support package for board variant 2 revision 1 specifics source
+│  │  ├─ bsp_init.c      # Board support package for board variant 2 revision 1 initialization source
 │  ├─ main.c             # Main source
+│  ├─ version.h          # Software version (without board version)
 ├─ util/                 # Utilities and scripts directory
 ├─ test/                 # Test directory
 │  ├─ lib/               # Test directory for libraries
@@ -82,3 +96,18 @@ firmware/                # Root directory
 ├─ VERSION               # Version file
 ├─ LICENSE               # License file
 ├─ DIRECTORY             # This file
+
+
+Sources and inspiration:
+* https://web.git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/
+* https://github.com/zephyrproject-rtos/zephyr
+* https://github.com/FreeRTOS/FreeRTOS-Kernel
+* https://github.com/ARMmbed/mbed-os
+* https://github.com/nginx/nginx
+* https://github.com/platformio/platformio-core
+* https://github.com/mcu-tools/mcuboot
+* https://github.com/vsergeev/c-periphery
+* https://git.yoctoproject.org/poky/
+* https://github.com/feaser/openblt
+* https://github.com/cvra/can-bootloader
+* https://github.com/lwip-tcpip/lwip
