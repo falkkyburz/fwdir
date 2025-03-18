@@ -44,45 +44,42 @@ firmware/                # Root directory
 │  ├─ flash/             # Flashing scripts and templates
 │  ├─ pcan/              # CAN control software project directory
 ├─ src/                  # Source directory
-│  ├─ asw/               # Application software source directory
-│  │  ├─ asw_mon.c       # Application software component 
-│  │  ├─ asw_mon.h       # Application software component public header
-│  │  ├─ asw_mdp.c       # Application software component 
-│  │  ├─ asw_mdp.h       # Application software component public header
-│  │  ├─ asw_sdp.c       # Application software component 
-│  │  ├─ asw_sdp.h       # Application software component public header
-│  │  ├─ asw_ctl.c       # Application software component 
-│  │  ├─ asw_ctl.h       # Application software component public header
-│  │  ├─ asw_state.c     # Application software component 
-│  │  ├─ asw_state.h     # Application software component public header
-│  │  ├─ asw_cmp1.c      # Application software component 1 source
-│  │  ├─ asw_cmp1.h      # Application software component 1 public header
-│  │  ├─ asw_cmp2.c      # Application software component 2 source
-│  │  ├─ asw_cmp2.h      # Application software component 2 public header
-│  ├─ bsw/               # Basic software source directory
-│  │  ├─ bsw.c           # Basic software source
-│  │  ├─ bsw.h           # Basic software public header
-│  │  ├─ bsw_cmp1.c      # Basic software component 1 source
-│  │  ├─ bsw_cmp1.h      # Basic software component 1 public header
-│  │  ├─ bsw_cmp2.c      # Basic software component 2 source
-│  │  ├─ bsw_cmp2.h      # Basic software component 2 public header
-│  ├─ bsp/               # Board support package source directory
-│  │  ├─ bsp_board.h     # Basic software board public header
-│  │  ├─ bsp_init.h      # Basic software initialization public header
-│  │  ├─ bsp_mcu.h       # Basic software for MCU specifics public header
-│  ├─ bsp_board_v1r1/    # Board support package for board variant 1 revision 1 directory
+│  ├─ asw_mon.c          # Application software component 
+│  ├─ asw_mon.h          # Application software component public header
+│  ├─ asw_mdp.c          # Application software component 
+│  ├─ asw_mdp.h          # Application software component public header
+│  ├─ asw_sdp.c          # Application software component 
+│  ├─ asw_sdp.h          # Application software component public header
+│  ├─ asw_ctl.c          # Application software component 
+│  ├─ asw_ctl.h          # Application software component public header
+│  ├─ asw_state.c        # Application software component 
+│  ├─ asw_state.h        # Application software component public header
+│  ├─ asw_cmp1.c         # Application software component 1 source
+│  ├─ asw_cmp1.h         # Application software component 1 public header
+│  ├─ asw_cmp2.c         # Application software component 2 source
+│  ├─ asw_cmp2.h         # Application software component 2 public header
+│  ├─ bsw.c              # Basic software source
+│  ├─ bsw.h              # Basic software public header
+│  ├─ bsw_cmp1.c         # Basic software component 1 source
+│  ├─ bsw_cmp1.h         # Basic software component 1 public header
+│  ├─ bsw_cmp2.c         # Basic software component 2 source
+│  ├─ bsw_cmp2.h         # Basic software component 2 public header
+│  ├─ bsp_board.h        # Basic software board public header
+│  ├─ bsp_init.h         # Basic software initialization public header
+│  ├─ bsp_mcu.h          # Basic software for MCU specifics public header
+│  ├─ board_v1r1/        # Board support package for board variant 1 revision 1 directory
 │  │  ├─ bsp_board.h     # Board support package for board variant 1 revision 1 specific header
 │  │  ├─ bsp_board.c     # Board support package for board variant 1 revision 1 specific source
 │  │  ├─ bsp_mcu.c       # Board support package for board variant 1 revision 1 specifics source
 │  │  ├─ bsp_init.c      # Board support package for board variant 1 revision 1 initialization source
 │  │  ├─ bsp_boot.asm    # Board support package for board variant 1 revision 1 boot source
-│  ├─ bsp_board_v1r2/    # Board support package for board variant 1 revision 2 directory
+│  ├─ board_v1r2/        # Board support package for board variant 1 revision 2 directory
 │  │  ├─ bsp_board.h     # Board support package for board variant 1 revision 2 specific header
 │  │  ├─ bsp_board.c     # Board support package for board variant 1 revision 2 specific source
 │  │  ├─ bsp_mcu.c       # Board support package for board variant 1 revision 2 specifics source
 │  │  ├─ bsp_init.c      # Board support package for board variant 1 revision 2 initialization source
 │  │  ├─ bsp_boot.asm    # Board support package for board variant 1 revision 2 boot source
-│  ├─ bsp_board_v2r1/    # Board support package for board variant 2 revision 1 directory
+│  ├─ board_v2r1/        # Board support package for board variant 2 revision 1 directory
 │  │  ├─ bsp_board.h     # Board support package for board variant 2 revision 1 specific header
 │  │  ├─ bsp_board.c     # Board support package for board variant 2 revision 1 specific source
 │  │  ├─ bsp_mcu.c       # Board support package for board variant 2 revision 1 specifics source
