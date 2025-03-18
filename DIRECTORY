@@ -57,9 +57,10 @@ firmware/                # Root directory
 │  │  ├─ bsw_cmp1.h      # Basic software component 1 public header
 │  │  ├─ bsw_cmp2.c      # Basic software component 2 source
 │  │  ├─ bsw_cmp2.h      # Basic software component 2 public header
-│  │  ├─ bsw_board.h     # Basic software board public header
-│  │  ├─ bsw_init.h      # Basic software initialization public header
-│  │  ├─ bsw_mcu.h       # Basic software for MCU specifics public header
+│  ├─ bsp/               # Board support package source directory
+│  │  ├─ bsp_board.h     # Basic software board public header
+│  │  ├─ bsp_init.h      # Basic software initialization public header
+│  │  ├─ bsp_mcu.h       # Basic software for MCU specifics public header
 │  ├─ bsp_board_v1r1/    # Board support package for board variant 1 revision 1 directory
 │  │  ├─ bsp_board.h     # Board support package for board variant 1 revision 1 specific header
 │  │  ├─ bsp_board.c     # Board support package for board variant 1 revision 1 specific source
