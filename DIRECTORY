@@ -107,6 +107,15 @@ Build Variables:
 * Board_Revision = r1
 * Config_Variant = default
 
+Make Parameters:
+make release BOARD_VAR=v1 BOARD_REV=r1 CFG=default
+
+Makefile Receipe Example (using recursive make):
+make release:
+  $(MAKE) release BOARD_VAR=v1 BOARD_REV=r1 CFG=default
+  $(MAKE) release BOARD_VAR=v2 BOARD_REV=r1 CFG=default
+  $(MAKE) release BOARD_VAR=v2 BOARD_REV=r1 CFG=default
+
 Sources and inspiration:
 * https://web.git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/
 * https://github.com/zephyrproject-rtos/zephyr
