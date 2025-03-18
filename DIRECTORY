@@ -36,8 +36,10 @@ firmware/                # Root directory
 │  ├─ memory_mcu1.lnk    # Linker file for MCU 1
 │  ├─ memory_mcu2.lnk    # Linker file for MCU 2
 ├─ proj/                 # Project file directory
-│  ├─ ide/               # Integrated development environment project files
-│  ├─ flash/             # Flashing scripts
+│  ├─ ideproj_mcu1/      # Integrated development environment project for mcu1 directory
+│  ├─ ideproj_mcu2/      # Integrated development environment project for mcu2 directory
+│  ├─ flash/             # Flashing scripts and templates
+│  ├─ pcan/              # CAN control software project directory
 ├─ src/                  # Source directory
 │  ├─ asw/               # Application software source directory
 │  │  ├─ asw_mon.c       # Application software component 
