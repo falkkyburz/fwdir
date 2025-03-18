@@ -4,8 +4,12 @@ firmware/                # Root directory
 ├─ doc/                  # Documentation directory
 ├─ cfg/                  # Configuration directory
 │  ├─ cfg.h              # Configuration public header (typedef structs)
-│  ├─ cfg_params1.c      # Configuration source (struct initialization)
-│  ├─ cfg_params2.c      # Configuration source (struct initialization)
+│  ├─ default            # Default configuration directory
+│  │  ├─ cfg_params1.c   # Configuration source (struct initialization)
+│  │  ├─ cfg_params2.c   # Configuration source (struct initialization)
+│  ├─ custom1            # Custom (customer specific) configuration directory
+│  │  ├─ cfg_params1.c   # Configuration source (struct initialization)
+│  │  ├─ cfg_params2.c   # Configuration source (struct initialization)
 ├─ lib/                  # Library (reusable) directory
 │  ├─ libdsp/            # DSP library directory
 │  │  ├─ cfg.c           # Configuration library source
@@ -98,6 +102,10 @@ firmware/                # Root directory
 ├─ LICENSE               # License file
 ├─ DIRECTORY             # This file
 
+Build Variables:
+* Board_Variant = v1
+* Board_Revision = r1
+* Config_Variant = default
 
 Sources and inspiration:
 * https://web.git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/
