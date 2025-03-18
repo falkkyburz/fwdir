@@ -75,16 +75,19 @@ firmware/                # Root directory
 │  │  ├─ bsp_board.c     # Board support package for board variant 1 revision 1 specific source
 │  │  ├─ bsp_mcu.c       # Board support package for board variant 1 revision 1 specifics source
 │  │  ├─ bsp_init.c      # Board support package for board variant 1 revision 1 initialization source
+│  │  ├─ bsp_boot.asm    # Board support package for board variant 1 revision 1 boot source
 │  ├─ bsp_board_v1r2/    # Board support package for board variant 1 revision 2 directory
 │  │  ├─ bsp_board.h     # Board support package for board variant 1 revision 2 specific header
 │  │  ├─ bsp_board.c     # Board support package for board variant 1 revision 2 specific source
 │  │  ├─ bsp_mcu.c       # Board support package for board variant 1 revision 2 specifics source
 │  │  ├─ bsp_init.c      # Board support package for board variant 1 revision 2 initialization source
+│  │  ├─ bsp_boot.asm    # Board support package for board variant 1 revision 2 boot source
 │  ├─ bsp_board_v2r1/    # Board support package for board variant 2 revision 1 directory
 │  │  ├─ bsp_board.h     # Board support package for board variant 2 revision 1 specific header
 │  │  ├─ bsp_board.c     # Board support package for board variant 2 revision 1 specific source
 │  │  ├─ bsp_mcu.c       # Board support package for board variant 2 revision 1 specifics source
 │  │  ├─ bsp_init.c      # Board support package for board variant 2 revision 1 initialization source
+│  │  ├─ bsp_boot.asm    # Board support package for board variant 2 revision 1 boot source
 │  ├─ main.c             # Main source
 │  ├─ version.h          # Software version (without board version)
 ├─ util/                 # Utilities and scripts directory
