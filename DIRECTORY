@@ -1,6 +1,9 @@
 firmware/                # Root directory
 ├─ build/                # Build directory (dynamic, removed by make clean)
 ├─ release/              # Software release package directory (dynamic, removed by make clean)
+│  ├─ fw_v1r1/           # Release directory for variant 1 revision 1
+│  ├─ fw_v1r2/           # Release directory for variant 1 revision 2
+│  ├─ fw_v2r1/           # Release directory for variant 2 revision 1
 ├─ doc/                  # Documentation directory
 ├─ cfg/                  # Configuration directory
 │  ├─ cfg.h              # Configuration public header (typedef structs)
